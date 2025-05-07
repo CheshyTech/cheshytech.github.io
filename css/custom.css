@@ -1,0 +1,63 @@
+/* Cambiar la tipografía a una más moderna */
+body {
+    font-family: 'Roboto', sans-serif;  /* Cambia la fuente a 'Roboto' */
+    font-size: 0.95rem; /* Tamanho de texto ligeramente reducido */
+    line-height: 1.6; /* Mejor legibilidad */
+    color: #333; /* Color de texto más suave */
+    background-color: #f4f4f4; /* Fondo claro */
+}
+
+/* Estilo de los enlaces */
+a {
+    color: #007bff;  /* Color azul para los enlaces */
+    text-decoration: none;  /* Sin subrayado */
+}
+
+a:hover {
+    color: #0056b3; /* Color más oscuro cuando pasa el cursor */
+    text-decoration: underline; /* Subrayado en hover */
+}
+
+/* Personalización de los encabezados */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600; /* Un poco más grueso para los títulos */
+    color: #222; /* Títulos oscuros */
+    margin-bottom: 0.5rem; /* Espacio debajo de los encabezados */
+}
+
+/* Estilo para las citas */
+blockquote {
+    border-left: 4px solid #007bff; /* Barra azul a la izquierda */
+    padding-left: 1rem; /* Relleno para las citas */
+    font-style: italic;
+    color: #666; /* Color gris para las citas */
+    margin: 1.5rem 0; /* Margen superior e inferior */
+}
+
+/* Estilo para las listas */
+ul, ol {
+    padding-left: 2rem;
+}
+
+/* Estilo para el pie de página */
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+/* Ajuste de los botones */
+button, .btn {
+    background-color: #007bff;  /* Botones en color azul */
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+button:hover, .btn:hover {
+    background-color: #0056b3; /* Color más oscuro en hover */
+}
