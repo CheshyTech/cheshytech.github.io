@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tecnología on CheshyTech Blog</title>
+    <link>https://cheshytech.github.io/es/categories/tecnolog%C3%ADa/</link>
+    <description>Recent content in Tecnología on CheshyTech Blog</description>
+    <generator>Hugo -- 0.147.0</generator>
+    <language>es-es</language>
+    <lastBuildDate>Sat, 26 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://cheshytech.github.io/es/categories/tecnolog%C3%ADa/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introducción rápida a sistemas linux. ¿Qué distro elijo?</title>
+      <link>https://cheshytech.github.io/es/posts/primer-articulo/</link>
+      <pubDate>Sat, 26 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://cheshytech.github.io/es/posts/primer-articulo/</guid>
+      <description>&lt;h1 id=&#34;introducción&#34;&gt;Introducción&lt;/h1&gt;
+&lt;p&gt;Holis, bienvenidos a mi primer artículo! En este primer post quiero empezar por el principio, explicando un poco la base para que lo que vaya publicando después tenga más sentido. Aquí hablaré sobre qué es linux, por qué se usa y como elegir una de tantas distribuciones existentes.&lt;/p&gt;
+&lt;h2 id=&#34;por-qué-linux&#34;&gt;¿Por qué Linux?&lt;/h2&gt;
+&lt;p&gt;Linux es un sistema operativo libre y flexible, utilizado por millones de personas alrededor del mundo. Al trabajar como administradora de sistemas trato con distintas distribuciones de Linux, lo que poco a poco me va ayudando a aprender cositas interesantes a base de darme cabezazos contra una pared. En este artículo, hablaré un poco sobre lo que es Linux y cómo puedes empezar a tratar con él.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

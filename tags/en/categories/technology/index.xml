@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Technology on CheshyTech Blog</title>
+    <link>https://cheshytech.github.io/en/categories/technology/</link>
+    <description>Recent content in Technology on CheshyTech Blog</description>
+    <generator>Hugo -- 0.147.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 26 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://cheshytech.github.io/en/categories/technology/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My First Blog Article</title>
+      <link>https://cheshytech.github.io/en/posts/first-article/</link>
+      <pubDate>Sat, 26 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://cheshytech.github.io/en/posts/first-article/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;Welcome to my first article! In this post, I want to share with you some basic concepts about &lt;strong&gt;programming&lt;/strong&gt; and &lt;strong&gt;Linux systems&lt;/strong&gt;, which are two of my areas of interest. I hope this article will be helpful for those who are starting to explore these fields.&lt;/p&gt;
+&lt;h2 id=&#34;why-linux&#34;&gt;Why Linux?&lt;/h2&gt;
+&lt;p&gt;Linux is a powerful and flexible operating system used by millions of people around the world. In my daily work, I deal with various Linux distributions, which has given me a great understanding of its potential. In this article, I will talk a bit about what Linux is and how you can start working with it.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
