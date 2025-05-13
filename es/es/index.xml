@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bienvenido a mi Blog on CheshyTech Blog</title>
+    <link>http://localhost:1313/es/es/</link>
+    <description>Recent content in Bienvenido a mi Blog on CheshyTech Blog</description>
+    <generator>Hugo</generator>
+    <language>es</language>
+    <lastBuildDate>Tue, 13 May 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/es/es/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Actualización de paquetes de centos congelada</title>
+      <link>http://localhost:1313/es/es/posts/actualizacion-de-paquetes-congelada-centos-7/</link>
+      <pubDate>Tue, 13 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/es/posts/actualizacion-de-paquetes-congelada-centos-7/</guid>
+      <description>&lt;p&gt;Tras instalar un sistema de CentOS 7 y actualizar los repositorios generalmente toca actualizar paquetes. Pues por alguna razon una de estas veces uno de los paquetes ha decidido que le apetecía estar corrupto. Se trata concretamente del paquete &lt;code&gt;initial-setup-0.3.9.30-1.el7.centos.x86_64&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Al encontrase corrupto lo que pasa es que cuando llega el punto en que quiere &amp;ldquo;limpiar&amp;rdquo; versiones antiguas tras actualizar los paquetes se encuentra con que no debe de poder borrarlo, y se queda el proceso de actualización &amp;ldquo;congelado&amp;rdquo;, y llega un punto en que no sabes si está haciendo algo y tarda mucho o se ha muerto.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Repositorios de CentOS desactualizados</title>
+      <link>http://localhost:1313/es/es/posts/repositorios-desactualizados-centos-7/</link>
+      <pubDate>Tue, 13 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/es/posts/repositorios-desactualizados-centos-7/</guid>
+      <description>&lt;p&gt;Algunas distribuciones de CentOS pueden ser un dolor de cabeza a la hora de instalarlas y configurarlas, especialmente considerando que hay versiones deprecadas que ya no cuentan con soporte. CentOS 7 es una de ellas. He creado una serie de artículos, de los cuales consideraría este el primero, relacionados con problemas que pueden surgir en este tipo de instalaciones.&lt;/p&gt;&#xA;&lt;p&gt;Los repositorios de CentOS 7 ya no están disponibles en sus ubicaciones originales (las URLs han cambiado). Esto provoca errores al intentar actualizar los paquetes del sistema o instalar nuevos, como el siguiente:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/es/es/about/</link>
+      <pubDate>Sat, 26 Apr 2025 20:15:27 +0200</pubDate>
+      <guid>http://localhost:1313/es/es/about/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Instalación de Ubuntu</title>
+      <link>http://localhost:1313/es/es/posts/installaci%C3%B3n-ubuntu/</link>
+      <pubDate>Sat, 26 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/es/posts/installaci%C3%B3n-ubuntu/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Introducción rápida a sistemas linux. ¿Qué distro elijo?</title>
+      <link>http://localhost:1313/es/es/posts/que-distribucion-elijo/</link>
+      <pubDate>Sat, 26 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/es/posts/que-distribucion-elijo/</guid>
+      <description>&lt;h1 id=&#34;introducción&#34;&gt;Introducción&lt;/h1&gt;&#xA;&lt;p&gt;Holis, bienvenidos a mi primer artículo! En este primer post quiero empezar por el principio, explicando un poco la base para que lo que vaya publicando después tenga más sentido. Aquí hablaré sobre qué es linux, por qué se usa y como elegir una de tantas distribuciones existentes.&lt;/p&gt;&#xA;&lt;h2 id=&#34;por-qué-linux&#34;&gt;¿Por qué Linux?&lt;/h2&gt;&#xA;&lt;p&gt;Linux es un sistema operativo libre y flexible, utilizado por millones de personas alrededor del mundo. Al trabajar como administradora de sistemas trato con distintas distribuciones de Linux, lo que poco a poco me va ayudando a aprender cositas interesantes a base de darme cabezazos contra una pared. En este artículo, hablaré un poco sobre lo que es Linux y cómo puedes empezar a tratar con él.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

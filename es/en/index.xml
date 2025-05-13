@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Welcome to My Blog on CheshyTech Blog</title>
+    <link>http://localhost:1313/es/en/</link>
+    <description>Recent content in Welcome to My Blog on CheshyTech Blog</description>
+    <generator>Hugo</generator>
+    <language>es</language>
+    <lastBuildDate>Sat, 26 Apr 2025 20:15:27 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/es/en/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/es/en/about/</link>
+      <pubDate>Sat, 26 Apr 2025 20:15:27 +0200</pubDate>
+      <guid>http://localhost:1313/es/en/about/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Quick Introduction to Linux Systems. Which Distro Should I Choose?</title>
+      <link>http://localhost:1313/es/en/posts/what-distro-should-i-choose/</link>
+      <pubDate>Sat, 26 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/en/posts/what-distro-should-i-choose/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;Hi there, welcome to my first article! In this initial post, I want to start from the beginning, explaining some basics so that what I publish later makes more sense. Here, I&amp;rsquo;ll talk about what Linux is, why it&amp;rsquo;s used, and how to choose one of the many existing distributions.&lt;/p&gt;&#xA;&lt;h2 id=&#34;why-linux&#34;&gt;Why Linux?&lt;/h2&gt;&#xA;&lt;p&gt;Linux is a free and flexible operating system used by millions of people around the world. As a systems administrator, I work with different Linux distributions, which gradually helps me learn interesting things by banging my head against the wall. In this article, I&amp;rsquo;ll talk a bit about what Linux is and how you can start working with it.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

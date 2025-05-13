@@ -4,15 +4,15 @@
     <title>Tecnología on CheshyTech Blog</title>
     <link>https://cheshytech.github.io/es/categories/tecnolog%C3%ADa/</link>
     <description>Recent content in Tecnología on CheshyTech Blog</description>
-    <generator>Hugo -- 0.147.0</generator>
+    <generator>Hugo -- 0.147.2</generator>
     <language>es-es</language>
     <lastBuildDate>Sat, 26 Apr 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://cheshytech.github.io/es/categories/tecnolog%C3%ADa/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introducción rápida a sistemas linux. ¿Qué distro elijo?</title>
-      <link>https://cheshytech.github.io/es/posts/primer-articulo/</link>
+      <link>https://cheshytech.github.io/es/posts/que-distribucion-elijo/</link>
       <pubDate>Sat, 26 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://cheshytech.github.io/es/posts/primer-articulo/</guid>
+      <guid>https://cheshytech.github.io/es/posts/que-distribucion-elijo/</guid>
       <description>&lt;h1 id=&#34;introducción&#34;&gt;Introducción&lt;/h1&gt;
 &lt;p&gt;Holis, bienvenidos a mi primer artículo! En este primer post quiero empezar por el principio, explicando un poco la base para que lo que vaya publicando después tenga más sentido. Aquí hablaré sobre qué es linux, por qué se usa y como elegir una de tantas distribuciones existentes.&lt;/p&gt;
 &lt;h2 id=&#34;por-qué-linux&#34;&gt;¿Por qué Linux?&lt;/h2&gt;

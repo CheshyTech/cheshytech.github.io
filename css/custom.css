@@ -1,7 +1,7 @@
 /* Cambiar la tipografía a una más moderna */
 body {
     font-family: 'Roboto', sans-serif;  /* Cambia la fuente a 'Roboto' */
-    font-size: 0.95rem; /* Tamanho de texto ligeramente reducido */
+    font-size: 0.97rem !important; /* Tamanho de texto ligeramente reducido */
     line-height: 1.6; /* Mejor legibilidad */
     color: #333; /* Color de texto más suave */
     background-color: #f4f4f4; /* Fondo claro */

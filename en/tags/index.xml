@@ -4,28 +4,35 @@
     <title>Tags on CheshyTech Blog</title>
     <link>https://cheshytech.github.io/en/tags/</link>
     <description>Recent content in Tags on CheshyTech Blog</description>
-    <generator>Hugo -- 0.147.0</generator>
+    <generator>Hugo -- 0.147.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 26 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 13 May 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://cheshytech.github.io/en/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Centos</title>
+      <link>https://cheshytech.github.io/en/tags/centos/</link>
+      <pubDate>Tue, 13 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://cheshytech.github.io/en/tags/centos/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Linux</title>
       <link>https://cheshytech.github.io/en/tags/linux/</link>
-      <pubDate>Sat, 26 Apr 2025 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 13 May 2025 00:00:00 +0000</pubDate>
       <guid>https://cheshytech.github.io/en/tags/linux/</guid>
       <description></description>
     </item>
     <item>
       <title>Programming</title>
       <link>https://cheshytech.github.io/en/tags/programming/</link>
-      <pubDate>Sat, 26 Apr 2025 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 13 May 2025 00:00:00 +0000</pubDate>
       <guid>https://cheshytech.github.io/en/tags/programming/</guid>
       <description></description>
     </item>
     <item>
       <title>Tutorial</title>
       <link>https://cheshytech.github.io/en/tags/tutorial/</link>
-      <pubDate>Sat, 26 Apr 2025 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 13 May 2025 00:00:00 +0000</pubDate>
       <guid>https://cheshytech.github.io/en/tags/tutorial/</guid>
       <description></description>
     </item>

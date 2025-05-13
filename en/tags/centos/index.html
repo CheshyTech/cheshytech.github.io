@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Centos | CheshyTech Blog</title>
+<meta name="keywords" content="">
+<meta name="description" content="Blog sobre Linux, sistemas, scripting y más tecnología">
+<meta name="author" content="Cheshy">
+<link rel="canonical" href="https://cheshytech.github.io/en/tags/centos/">
+        <link rel="stylesheet" href="/css/custom.css">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.f49d66caae9ea0fd43f21f29e71a8d3e284517ed770f2aa86fa012953ad3c9ef.css" integrity="sha256-9J1myq6eoP1D8h8p5xqNPihFF&#43;13Dyqob6ASlTrTye8=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://cheshytech.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://cheshytech.github.io/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://cheshytech.github.io/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://cheshytech.github.io/apple-touch-icon.png">
+<link rel="mask-icon" href="https://cheshytech.github.io/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://cheshytech.github.io/en/tags/centos/index.xml">
+<link rel="alternate" hreflang="es" href="https://cheshytech.github.io/es/tags/centos/">
+<link rel="alternate" hreflang="en" href="https://cheshytech.github.io/en/tags/centos/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:url" content="https://cheshytech.github.io/en/tags/centos/">
+  <meta property="og:site_name" content="CheshyTech Blog">
+  <meta property="og:title" content="Centos">
+  <meta property="og:description" content="Blog sobre Linux, sistemas, scripting y más tecnología">
+  <meta property="og:locale" content="en-us">
+  <meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Centos">
+<meta name="twitter:description" content="Blog sobre Linux, sistemas, scripting y más tecnología">
+
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://cheshytech.github.io/en/" accesskey="h" title="CheshyTech Blog (Alt + H)">CheshyTech Blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <ul class="lang-switch"><li>|</li>
+                    <li>
+                        <a href="https://cheshytech.github.io/es/" title="Español"
+                            aria-label="Español">Es</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://cheshytech.github.io/en/about/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://cheshytech.github.io/en/contact/" title="Contact">
+                    <span>Contact</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://cheshytech.github.io/en/privacy/" title="Privacy Policy">
+                    <span>Privacy Policy</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header">
+  <h1>
+    Centos
+  </h1>
+</header>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">CentOS Frozen Package Update
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>After installing a CentOS 7 system and updating the repositories, you usually need to update packages. However, for some reason, one of these times, a package decided to become corrupted. Specifically, the package initial-setup-0.3.9.30-1.el7.centos.x86_64.
+When corrupted, during the process of cleaning up old versions after updating packages, it fails to delete itself, causing the update process to “freeze.” At this point, you might not know whether it is still working or has stopped.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-05-13 00:00:00 +0000 UTC'>May 13, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Cheshy</footer>
+  <a class="entry-link" aria-label="post link to CentOS Frozen Package Update" href="https://cheshytech.github.io/en/posts/centos-7-frozen-package-update/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Outdated CentOS Repositories
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Some CentOS distributions can be a headache to install and configure, especially considering there are deprecated versions that no longer have support. CentOS 7 is one of them. I have created a series of articles, of which I would consider this the first, related to issues that may arise in such installations.
+The CentOS 7 repositories are no longer available at their original locations (the URLs have changed). This causes errors when trying to update system packages or install new ones, such as the following:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-05-13 00:00:00 +0000 UTC'>May 13, 2025</span>&nbsp;·&nbsp;3 min&nbsp;·&nbsp;Cheshy</footer>
+  <a class="entry-link" aria-label="post link to Outdated CentOS Repositories" href="https://cheshytech.github.io/en/posts/outdated-repositories-centos-7/"></a>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="https://cheshytech.github.io/en/">CheshyTech Blog</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

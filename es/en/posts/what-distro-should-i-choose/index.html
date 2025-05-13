@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Quick Introduction to Linux Systems. Which Distro Should I Choose? | CheshyTech Blog</title>
+<link rel="icon" href="favicon.svg" sizes="any" type="image/svg+xml" /><meta property="og:url" content="http://localhost:1313/es/en/posts/what-distro-should-i-choose/">
+  <meta property="og:site_name" content="CheshyTech Blog">
+  <meta property="og:title" content="Quick Introduction to Linux Systems. Which Distro Should I Choose?">
+  <meta property="og:description" content="Introduction Hi there, welcome to my first article! In this initial post, I want to start from the beginning, explaining some basics so that what I publish later makes more sense. Here, I’ll talk about what Linux is, why it’s used, and how to choose one of the many existing distributions.
+Why Linux? Linux is a free and flexible operating system used by millions of people around the world. As a systems administrator, I work with different Linux distributions, which gradually helps me learn interesting things by banging my head against the wall. In this article, I’ll talk a bit about what Linux is and how you can start working with it.">
+  <meta property="og:locale" content="es">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="en">
+    <meta property="article:published_time" content="2025-04-26T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-04-26T00:00:00+00:00">
+    <meta property="article:tag" content="Tutorial">
+    <meta property="article:tag" content="Programming">
+    <meta property="article:tag" content="Linux">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Quick Introduction to Linux Systems. Which Distro Should I Choose?">
+  <meta name="twitter:description" content="Introduction Hi there, welcome to my first article! In this initial post, I want to start from the beginning, explaining some basics so that what I publish later makes more sense. Here, I’ll talk about what Linux is, why it’s used, and how to choose one of the many existing distributions.
+Why Linux? Linux is a free and flexible operating system used by millions of people around the world. As a systems administrator, I work with different Linux distributions, which gradually helps me learn interesting things by banging my head against the wall. In this article, I’ll talk a bit about what Linux is and how you can start working with it.">
+
+    <link rel="stylesheet" href="/css/root.css">
+    <link rel="stylesheet" href="/css/bundle.css">
+
+      <script src="/js/bundle.js"></script><script defer src="/js/search/flexsearch.compact.64594b125f7b78bdf4fa8316955922bbebb1cd6baef3f16654bfca20309f18f8.js" integrity="sha256-ZFlLEl97eL30&#43;oMWlVkiu&#43;uxzWuu8/FmVL/KIDCfGPg="></script>
+<script defer src="/js/search/search.4460565090e1d2158447241cfb857e63b5e18a69691444e622afb443690942a5.js" integrity="sha256-RGBWUJDh0hWERyQc&#43;4V&#43;Y7XhimlpFETmIq&#43;0Q2kJQqU="></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+</head>
+<body class="notransition">
+  <div id="container">
+    <header id="main-header"><div role="navigation" aria-label="Main">
+  <div class="nav-left">
+    <a href="http://localhost:1313/" style="color: inherit;">CheshyTech Blog</a>
+  </div>
+  <div class="nav-right">
+    <div style="position:absolute;width:0px;height:0px;">
+      <div id="nav-dropdown-menu" class="hidden" href="#">
+    <div class="nav-item">
+      <a
+      >Posts</a>
+    </div>
+</div>
+    </div>
+    <a id="nav-dropdown-button" href="#"><svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</a>
+    <div id="nav-menu">
+    <div class="nav-item">
+      <a
+      >Posts</a>
+    </div>
+</div>
+    <a id="theme-switcher" href="#">
+<svg class="light-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 3V4M12 20V21M4 12H3M6.31412 6.31412L5.5 5.5M17.6859 6.31412L18.5 5.5M6.31412 17.69L5.5 18.5001M17.6859 17.69L18.5 18.5001M21 12H20M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+<svg class="dark-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.32031 11.6835C3.32031 16.6541 7.34975 20.6835 12.3203 20.6835C16.1075 20.6835 19.3483 18.3443 20.6768 15.032C19.6402 15.4486 18.5059 15.6834 17.3203 15.6834C12.3497 15.6834 8.32031 11.654 8.32031 6.68342C8.32031 5.50338 8.55165 4.36259 8.96453 3.32996C5.65605 4.66028 3.32031 7.89912 3.32031 11.6835Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</a>
+  </div>
+</div>
+</header>
+    <div class="flex grow">
+      <div id="main-pane">
+        <main id="main-content"><div class="single-header">
+<ol class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a itemprop="item" href="http://localhost:1313/es/">
+        <span itemprop="name"></span>
+      </a>
+      <meta itemprop="position" content='1' />
+    </li>
+    <span>&nbsp»&nbsp</span>
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a itemprop="item" href="http://localhost:1313/es/en/">
+        <span itemprop="name">Welcome to My Blog</span>
+      </a>
+      <meta itemprop="position" content='2' />
+    </li>
+    <span>&nbsp»&nbsp</span>
+</ol>
+<h1>Quick Introduction to Linux Systems. Which Distro Should I Choose?</h1><time class="dim" datetime="2025-04-26T00:00:00&#43;00:00">26 de abril de 2025</time><div class="term-container"><div class="tag">
+        <a href="http://localhost:1313/es/tags/tutorial/">#tutorial</a>
+      </div><div class="tag">
+        <a href="http://localhost:1313/es/tags/programming/">#programming</a>
+      </div><div class="tag">
+        <a href="http://localhost:1313/es/tags/linux/">#linux</a>
+      </div></ol></div>
+  <section class="page-section"><h1 id="introduction">Introduction</h1>
+<p>Hi there, welcome to my first article! In this initial post, I want to start from the beginning, explaining some basics so that what I publish later makes more sense. Here, I&rsquo;ll talk about what Linux is, why it&rsquo;s used, and how to choose one of the many existing distributions.</p>
+<h2 id="why-linux">Why Linux?</h2>
+<p>Linux is a free and flexible operating system used by millions of people around the world. As a systems administrator, I work with different Linux distributions, which gradually helps me learn interesting things by banging my head against the wall. In this article, I&rsquo;ll talk a bit about what Linux is and how you can start working with it.</p>
+<h3 id="main-features-of-linux">Main Features of Linux:</h3>
+<ul>
+<li><strong>Open Source</strong>: Linux is open source, meaning anyone can view, modify, and distribute it. This gives you a lot of control over the system since you can tweak and modify it entirely (and break it too).</li>
+<li><strong>Stability</strong>: It is known for its stability and reliability.</li>
+<li><strong>Active Community</strong>: There is a large community of users and developers constantly contributing to its evolution.</li>
+</ul>
+<h2 id="linux-distributions">Linux Distributions</h2>
+<p>Since we can&rsquo;t do much without a system, the first step will be to install the operating system. There are tons of different Linux distributions, all of them with a similar base. Generally, the choice of distribution is more about personal preference than anything else, although there are very specific distributions for working in certain areas. Here&rsquo;s a summary table of the main Linux distributions and their primary uses.</p>
+<h3 id="-summary-table">📋 Summary Table</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Distribution</th>
+          <th>Main Features</th>
+          <th>Common Uses</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Debian</strong></td>
+          <td>Stable, very robust, focused on stability over novelty. Large community.</td>
+          <td>Servers, critical systems, base for other distros (like Ubuntu).</td>
+      </tr>
+      <tr>
+          <td><strong>Ubuntu</strong></td>
+          <td>Based on Debian. More user-friendly, with regular release cycles. Lots of support and community.</td>
+          <td>Desktop, servers, development, containers (Docker, WSL).</td>
+      </tr>
+      <tr>
+          <td><strong>Linux Mint</strong></td>
+          <td>Based on Ubuntu. Very focused on user experience, especially for those coming from Windows.</td>
+          <td>Desktop, beginners, or users who want something that works &ldquo;out of the box.&rdquo;</td>
+      </tr>
+      <tr>
+          <td><strong>Arch Linux</strong></td>
+          <td>Rolling release (always up-to-date), highly customizable, excellent documentation (Arch Wiki).</td>
+          <td>Advanced users, those who want to learn the system from the ground up.</td>
+      </tr>
+      <tr>
+          <td><strong>Manjaro</strong></td>
+          <td>Based on Arch, but easier to install and use. Includes graphical tools.</td>
+          <td>Desktop with access to the latest features, without the complexity of pure Arch.</td>
+      </tr>
+      <tr>
+          <td><strong>Fedora</strong></td>
+          <td>Sponsored by Red Hat. New technologies, fast support, very developer-focused.</td>
+          <td>Software development, modern desktop, testing technologies before they reach RHEL.</td>
+      </tr>
+      <tr>
+          <td><strong>RHEL (Red Hat Enterprise Linux)</strong></td>
+          <td>Commercial distribution, enterprise support, stable and certified.</td>
+          <td>Enterprise servers, critical systems, production environments.</td>
+      </tr>
+      <tr>
+          <td><strong>Rocky Linux / AlmaLinux</strong></td>
+          <td>100% compatible and free RHEL clones, designed to replace CentOS.</td>
+          <td>Enterprise servers without license costs.</td>
+      </tr>
+      <tr>
+          <td><strong>openSUSE</strong></td>
+          <td>Two versions: Leap (stable) and Tumbleweed (rolling). Great administration tools (YaST).</td>
+          <td>Desktop, development, servers.</td>
+      </tr>
+      <tr>
+          <td><strong>Kali Linux</strong></td>
+          <td>Based on Debian. Includes pentesting and cybersecurity tools.</td>
+          <td>Security auditors, pentesters, ethical hacking training.</td>
+      </tr>
+      <tr>
+          <td><strong>Parrot OS</strong></td>
+          <td>Similar to Kali, but lighter and also focused on privacy.</td>
+          <td>Cybersecurity, forensic analysis, privacy.</td>
+      </tr>
+      <tr>
+          <td><strong>Alpine Linux</strong></td>
+          <td>Very lightweight and secure, based on musl and busybox. Popular in containers.</td>
+          <td>Docker containers, embedded systems.</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h3 id="-quick-classification-by-use-case">🧭 Quick Classification by Use Case</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Category</th>
+          <th>Typical Distributions</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>End User (Desktop)</strong></td>
+          <td>Ubuntu, Linux Mint, Manjaro, Fedora Workstation</td>
+      </tr>
+      <tr>
+          <td><strong>Servers / Enterprises</strong></td>
+          <td>Debian, Ubuntu Server, RHEL, Rocky, Alma, openSUSE Leap</td>
+      </tr>
+      <tr>
+          <td><strong>Cybersecurity</strong></td>
+          <td>Kali Linux, Parrot OS</td>
+      </tr>
+      <tr>
+          <td><strong>Minimalist / Containers</strong></td>
+          <td>Alpine Linux, Arch Linux</td>
+      </tr>
+      <tr>
+          <td><strong>Rolling Release</strong></td>
+          <td>Arch, Manjaro, openSUSE Tumbleweed</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h2 id="conclusion">Conclusion</h2>
+<p>Linux is a great choice for those looking for a robust, secure, and customizable operating system. Personally, having used several of these distributions, I couldn&rsquo;t pick a favorite. I have a special fondness for Debian because it&rsquo;s the one I&rsquo;ve worked with the most, but I also really like Linux Mint for personal use.<br>
+If you found this article interesting, I&rsquo;ll be posting more articles related to the Linux world, starting with more general topics and also diving into more specific issues and common challenges with current and legacy systems.</p>
+<hr>
+<p><strong>Thank you for reading!</strong> If you liked it and want to share your thoughts or simply have a suggestion, feel free to email me at <a href="mailto:cheshytech.contact@gmail.com">cheshytech.contact@gmail.com</a> 🤗</p>
+</section></main>
+        <footer id="main-footer"><div class="footer">
+  <a href="#"></a>
+  <div class="footer-copyright">
+    <div class="dim">© 2025 </div>
+    <div></div>
+  </div>
+</div>
+</footer>
+      </div><aside id="side-pane" class="side-sticky"><div class="side-details">
+    <span>665 </span>
+    <span>4 - 5 </span><div class="side-details-taxonomy">
+        <small>categories: 
+          <span class="details-taxonomy"><a href="http://localhost:1313/categories/technology">Technology</a></span><span class="details-taxonomy"><a href="http://localhost:1313/categories/linux">Linux</a></span></small>
+      </div></div><h3></h3><nav id="TableOfContents">
+  <ul>
+    <li><a href="#why-linux">Why Linux?</a>
+      <ul>
+        <li><a href="#main-features-of-linux">Main Features of Linux:</a></li>
+      </ul>
+    </li>
+    <li><a href="#linux-distributions">Linux Distributions</a>
+      <ul>
+        <li><a href="#-summary-table">📋 Summary Table</a></li>
+        <li><a href="#-quick-classification-by-use-case">🧭 Quick Classification by Use Case</a></li>
+      </ul>
+    </li>
+    <li><a href="#conclusion">Conclusion</a></li>
+  </ul>
+</nav><h3></h3>
+    <ul><li><a href="/es/es/posts/installaci%C3%B3n-ubuntu/">Instalación de Ubuntu</a></li><li><a href="/es/es/posts/que-distribucion-elijo/">Introducción rápida a sistemas linux. ¿Qué distro elijo?</a></li></ul></aside></div>
+  </div>
+</body>
+</html>

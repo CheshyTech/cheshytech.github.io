@@ -4,19 +4,35 @@
     <title>Posts on CheshyTech Blog</title>
     <link>https://cheshytech.github.io/en/posts/</link>
     <description>Recent content in Posts on CheshyTech Blog</description>
-    <generator>Hugo -- 0.147.0</generator>
+    <generator>Hugo -- 0.147.2</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 26 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 13 May 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://cheshytech.github.io/en/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>My First Blog Article</title>
-      <link>https://cheshytech.github.io/en/posts/first-article/</link>
+      <title>CentOS Frozen Package Update</title>
+      <link>https://cheshytech.github.io/en/posts/centos-7-frozen-package-update/</link>
+      <pubDate>Tue, 13 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://cheshytech.github.io/en/posts/centos-7-frozen-package-update/</guid>
+      <description>&lt;p&gt;After installing a CentOS 7 system and updating the repositories, you usually need to update packages. However, for some reason, one of these times, a package decided to become corrupted. Specifically, the package &lt;code&gt;initial-setup-0.3.9.30-1.el7.centos.x86_64&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;When corrupted, during the process of cleaning up old versions after updating packages, it fails to delete itself, causing the update process to &amp;ldquo;freeze.&amp;rdquo; At this point, you might not know whether it is still working or has stopped.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Outdated CentOS Repositories</title>
+      <link>https://cheshytech.github.io/en/posts/outdated-repositories-centos-7/</link>
+      <pubDate>Tue, 13 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://cheshytech.github.io/en/posts/outdated-repositories-centos-7/</guid>
+      <description>&lt;p&gt;Some CentOS distributions can be a headache to install and configure, especially considering there are deprecated versions that no longer have support. CentOS 7 is one of them. I have created a series of articles, of which I would consider this the first, related to issues that may arise in such installations.&lt;/p&gt;
+&lt;p&gt;The CentOS 7 repositories are no longer available at their original locations (the URLs have changed). This causes errors when trying to update system packages or install new ones, such as the following:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Quick Introduction to Linux Systems. Which Distro Should I Choose?</title>
+      <link>https://cheshytech.github.io/en/posts/what-distro-should-i-choose/</link>
       <pubDate>Sat, 26 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://cheshytech.github.io/en/posts/first-article/</guid>
+      <guid>https://cheshytech.github.io/en/posts/what-distro-should-i-choose/</guid>
       <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
-&lt;p&gt;Welcome to my first article! In this post, I want to share with you some basic concepts about &lt;strong&gt;programming&lt;/strong&gt; and &lt;strong&gt;Linux systems&lt;/strong&gt;, which are two of my areas of interest. I hope this article will be helpful for those who are starting to explore these fields.&lt;/p&gt;
+&lt;p&gt;Hi there, welcome to my first article! In this initial post, I want to start from the beginning, explaining some basics so that what I publish later makes more sense. Here, I&amp;rsquo;ll talk about what Linux is, why it&amp;rsquo;s used, and how to choose one of the many existing distributions.&lt;/p&gt;
 &lt;h2 id=&#34;why-linux&#34;&gt;Why Linux?&lt;/h2&gt;
-&lt;p&gt;Linux is a powerful and flexible operating system used by millions of people around the world. In my daily work, I deal with various Linux distributions, which has given me a great understanding of its potential. In this article, I will talk a bit about what Linux is and how you can start working with it.&lt;/p&gt;</description>
+&lt;p&gt;Linux is a free and flexible operating system used by millions of people around the world. As a systems administrator, I work with different Linux distributions, which gradually helps me learn interesting things by banging my head against the wall. In this article, I&amp;rsquo;ll talk a bit about what Linux is and how you can start working with it.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

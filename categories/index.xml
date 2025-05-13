@@ -1,11 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on CheshyTech Blog</title>
-    <link>http://localhost:1313/categories/</link>
-    <description>Recent content in Categories on CheshyTech Blog</description>
-    <generator>Hugo -- 0.147.0</generator>
-    <language>en-us</language>
-    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <title>Categories on </title>
+    <link>//localhost:1313/categories/</link>
+    <description>Recent content in Categories on </description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 13 May 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux</title>
+      <link>//localhost:1313/categories/linux/</link>
+      <pubDate>Tue, 13 May 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/categories/linux/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Technology</title>
+      <link>//localhost:1313/categories/technology/</link>
+      <pubDate>Tue, 13 May 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/categories/technology/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tecnología</title>
+      <link>//localhost:1313/categories/tecnolog%C3%ADa/</link>
+      <pubDate>Sat, 26 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/categories/tecnolog%C3%ADa/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

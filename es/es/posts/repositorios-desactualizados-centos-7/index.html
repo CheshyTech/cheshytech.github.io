@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Repositorios de CentOS desactualizados | CheshyTech Blog</title>
+<link rel="icon" href="favicon.svg" sizes="any" type="image/svg+xml" /><meta property="og:url" content="http://localhost:1313/es/es/posts/repositorios-desactualizados-centos-7/">
+  <meta property="og:site_name" content="CheshyTech Blog">
+  <meta property="og:title" content="Repositorios de CentOS desactualizados">
+  <meta property="og:description" content="Algunas distribuciones de CentOS pueden ser un dolor de cabeza a la hora de instalarlas y configurarlas, especialmente considerando que hay versiones deprecadas que ya no cuentan con soporte. CentOS 7 es una de ellas. He creado una serie de artículos, de los cuales consideraría este el primero, relacionados con problemas que pueden surgir en este tipo de instalaciones.
+Los repositorios de CentOS 7 ya no están disponibles en sus ubicaciones originales (las URLs han cambiado). Esto provoca errores al intentar actualizar los paquetes del sistema o instalar nuevos, como el siguiente:">
+  <meta property="og:locale" content="es">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="es">
+    <meta property="article:published_time" content="2025-05-13T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-05-13T00:00:00+00:00">
+    <meta property="article:tag" content="Tutorial">
+    <meta property="article:tag" content="Programming">
+    <meta property="article:tag" content="Linux">
+    <meta property="article:tag" content="Centos">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Repositorios de CentOS desactualizados">
+  <meta name="twitter:description" content="Algunas distribuciones de CentOS pueden ser un dolor de cabeza a la hora de instalarlas y configurarlas, especialmente considerando que hay versiones deprecadas que ya no cuentan con soporte. CentOS 7 es una de ellas. He creado una serie de artículos, de los cuales consideraría este el primero, relacionados con problemas que pueden surgir en este tipo de instalaciones.
+Los repositorios de CentOS 7 ya no están disponibles en sus ubicaciones originales (las URLs han cambiado). Esto provoca errores al intentar actualizar los paquetes del sistema o instalar nuevos, como el siguiente:">
+
+    <link rel="stylesheet" href="/css/root.css">
+    <link rel="stylesheet" href="/css/bundle.css">
+
+      <script src="/js/bundle.js"></script><script defer src="/js/search/flexsearch.compact.64594b125f7b78bdf4fa8316955922bbebb1cd6baef3f16654bfca20309f18f8.js" integrity="sha256-ZFlLEl97eL30&#43;oMWlVkiu&#43;uxzWuu8/FmVL/KIDCfGPg="></script>
+<script defer src="/js/search/search.4460565090e1d2158447241cfb857e63b5e18a69691444e622afb443690942a5.js" integrity="sha256-RGBWUJDh0hWERyQc&#43;4V&#43;Y7XhimlpFETmIq&#43;0Q2kJQqU="></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+</head>
+<body class="notransition">
+  <div id="container">
+    <header id="main-header"><div role="navigation" aria-label="Main">
+  <div class="nav-left">
+    <a href="http://localhost:1313/" style="color: inherit;">CheshyTech Blog</a>
+  </div>
+  <div class="nav-right">
+    <div style="position:absolute;width:0px;height:0px;">
+      <div id="nav-dropdown-menu" class="hidden" href="#">
+    <div class="nav-item">
+      <a
+      >Posts</a>
+    </div>
+</div>
+    </div>
+    <a id="nav-dropdown-button" href="#"><svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</a>
+    <div id="nav-menu">
+    <div class="nav-item">
+      <a
+      >Posts</a>
+    </div>
+</div>
+    <a id="theme-switcher" href="#">
+<svg class="light-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 3V4M12 20V21M4 12H3M6.31412 6.31412L5.5 5.5M17.6859 6.31412L18.5 5.5M6.31412 17.69L5.5 18.5001M17.6859 17.69L18.5 18.5001M21 12H20M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+<svg class="dark-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.32031 11.6835C3.32031 16.6541 7.34975 20.6835 12.3203 20.6835C16.1075 20.6835 19.3483 18.3443 20.6768 15.032C19.6402 15.4486 18.5059 15.6834 17.3203 15.6834C12.3497 15.6834 8.32031 11.654 8.32031 6.68342C8.32031 5.50338 8.55165 4.36259 8.96453 3.32996C5.65605 4.66028 3.32031 7.89912 3.32031 11.6835Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</a>
+  </div>
+</div>
+</header>
+    <div class="flex grow">
+      <div id="main-pane">
+        <main id="main-content"><div class="single-header">
+<ol class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a itemprop="item" href="http://localhost:1313/es/">
+        <span itemprop="name"></span>
+      </a>
+      <meta itemprop="position" content='1' />
+    </li>
+    <span>&nbsp»&nbsp</span>
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a itemprop="item" href="http://localhost:1313/es/es/">
+        <span itemprop="name">Bienvenido a mi Blog</span>
+      </a>
+      <meta itemprop="position" content='2' />
+    </li>
+    <span>&nbsp»&nbsp</span>
+</ol>
+<h1>Repositorios de CentOS desactualizados</h1><time class="dim" datetime="2025-05-13T00:00:00&#43;00:00">13 de mayo de 2025</time><div class="term-container"><div class="tag">
+        <a href="http://localhost:1313/es/tags/tutorial/">#tutorial</a>
+      </div><div class="tag">
+        <a href="http://localhost:1313/es/tags/programming/">#programming</a>
+      </div><div class="tag">
+        <a href="http://localhost:1313/es/tags/linux/">#linux</a>
+      </div><div class="tag">
+        <a href="http://localhost:1313/es/tags/centos/">#centos</a>
+      </div></ol></div>
+  <section class="page-section"><p>Algunas distribuciones de CentOS pueden ser un dolor de cabeza a la hora de instalarlas y configurarlas, especialmente considerando que hay versiones deprecadas que ya no cuentan con soporte. CentOS 7 es una de ellas. He creado una serie de artículos, de los cuales consideraría este el primero, relacionados con problemas que pueden surgir en este tipo de instalaciones.</p>
+<p>Los repositorios de CentOS 7 ya no están disponibles en sus ubicaciones originales (las URLs han cambiado). Esto provoca errores al intentar actualizar los paquetes del sistema o instalar nuevos, como el siguiente:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Complementos cargados:fastestmirror, langpacks
+</span></span><span style="display:flex;"><span>Loading mirror speeds from cached hostfile
+</span></span><span style="display:flex;"><span>Could not retrieve mirrorlist http://mirrorlist.centos.org/?release<span style="color:#f92672">=</span>7&amp;arch<span style="color:#f92672">=</span>x86_64&amp;repo<span style="color:#f92672">=</span>os&amp;infra<span style="color:#f92672">=</span>stock error was
+</span></span><span style="display:flex;"><span>14: curl#6 - <span style="color:#e6db74">&#34;Could not resolve host: mirrorlist.centos.org; Nombre o servicio desconocido&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>One of the configured repositories failed <span style="color:#f92672">(</span>Desconocido<span style="color:#f92672">)</span>,
+</span></span><span style="display:flex;"><span>and yum doesn<span style="color:#e6db74">&#39;t have enough cached data to continue. At this point the only
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">safe thing yum can do is fail. There are a few ways to work &#34;fix&#34; this:
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    1. Contact the upstream for the repository and get them to fix the problem.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    2. Reconfigure the baseurl/etc. for the repository, to point to a working
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">       upstream. This is most often useful if you are using a newer
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">       distribution release than is supported by the repository (and the
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">       packages for the previous distribution release still work).
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    3. Run the command with the repository temporarily disabled
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">           yum --disablerepo=&lt;repoid&gt; ...
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    4. Disable the repository permanently, so yum won&#39;</span>t use it by default. Yum
+</span></span><span style="display:flex;"><span>       will <span style="color:#66d9ef">then</span> just ignore the repository <span style="color:#66d9ef">until</span> you permanently enable it
+</span></span><span style="display:flex;"><span>       again or use --enablerepo <span style="color:#66d9ef">for</span> temporary usage:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>           yum-config-manager --disable &lt;repoid&gt;
+</span></span><span style="display:flex;"><span>       or
+</span></span><span style="display:flex;"><span>           subscription-manager repos --disable<span style="color:#f92672">=</span>&lt;repoid&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    5. Configure the failing repository to be skipped, <span style="color:#66d9ef">if</span> it is unavailable.
+</span></span><span style="display:flex;"><span>       Note that yum will try to contact the repo. when it runs most commands,
+</span></span><span style="display:flex;"><span>       so will have to try and fail each time <span style="color:#f92672">(</span>and thus. yum will be be much
+</span></span><span style="display:flex;"><span>       slower<span style="color:#f92672">)</span>. If it is a very temporary problem though, this is often a nice
+</span></span><span style="display:flex;"><span>       compromise:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>           yum-config-manager --save --setopt<span style="color:#f92672">=</span>&lt;repoid&gt;.skip_if_unavailable<span style="color:#f92672">=</span>true
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Cannot find a valid baseurl <span style="color:#66d9ef">for</span> repo: base/7/x86_64
+</span></span></code></pre></div><h3 id="solución">Solución</h3>
+<p>Para resolver este problema, sigue estos pasos:</p>
+<ol>
+<li>
+<p><strong>Eleva permisos de administrador</strong><br>
+Accede como root utilizando <code>su -</code>.</p>
+</li>
+<li>
+<p><strong>Accede al directorio de configuración de repositorios</strong><br>
+Navega a <code>/etc/yum.repos.d</code>, donde se definen los repositorios que el sistema utiliza para actualizar o descargar paquetes.<br>
+<strong>¿Por qué usar repositorios y no instalar manualmente?</strong><br>
+Los repositorios garantizan que los paquetes sean confiables, estén actualizados y sean compatibles con el sistema, si los instalamos a mano esto se nos va a la mierda.</p>
+</li>
+<li>
+<p><strong>Haz un respaldo del archivo de configuración</strong><br>
+Realiza un backup del archivo <code>CentOS-Base.repo</code> antes de modificarlo:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mv CentOS-Base.repo CentOS-Base.repo.bck
+</span></span></code></pre></div></li>
+<li>
+<p><strong>Crea un nuevo archivo de configuración</strong><br>
+Abre un editor de texto para crear un nuevo archivo con el mismo nombre:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nano CentOS-Base.repo
+</span></span></code></pre></div></li>
+<li>
+<p><strong>Añade el contenido actualizado</strong><br>
+Copia y pega el siguiente contenido en el archivo:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">[</span>base<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>name<span style="color:#f92672">=</span>CentOS-$releasever - Base
+</span></span><span style="display:flex;"><span>baseurl<span style="color:#f92672">=</span>https://vault.centos.org/7.9.2009/os/$basearch/
+</span></span><span style="display:flex;"><span>gpgcheck<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>gpgkey<span style="color:#f92672">=</span>file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+</span></span><span style="display:flex;"><span>enabled<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>updates<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>name<span style="color:#f92672">=</span>CentOS-$releasever - Updates
+</span></span><span style="display:flex;"><span>baseurl<span style="color:#f92672">=</span>https://vault.centos.org/7.9.2009/updates/$basearch/
+</span></span><span style="display:flex;"><span>gpgcheck<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>gpgkey<span style="color:#f92672">=</span>file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+</span></span><span style="display:flex;"><span>enabled<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>extras<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>name<span style="color:#f92672">=</span>CentOS-$releasever - Extras
+</span></span><span style="display:flex;"><span>baseurl<span style="color:#f92672">=</span>https://vault.centos.org/7.9.2009/extras/$basearch/
+</span></span><span style="display:flex;"><span>gpgcheck<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>gpgkey<span style="color:#f92672">=</span>file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+</span></span><span style="display:flex;"><span>enabled<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>centosplus<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>name<span style="color:#f92672">=</span>CentOS-$releasever - CentOSPlus
+</span></span><span style="display:flex;"><span>baseurl<span style="color:#f92672">=</span>https://vault.centos.org/7.9.2009/centosplus/$basearch/
+</span></span><span style="display:flex;"><span>gpgcheck<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>gpgkey<span style="color:#f92672">=</span>file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+</span></span><span style="display:flex;"><span>enabled<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>
+</span></span></code></pre></div></li>
+<li>
+<p><strong>Actualiza los paquetes del sistema</strong><br>
+Ejecuta el siguiente comando para comprobar que todo funciona:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>yum update
+</span></span></code></pre></div></li>
+</ol>
+<p>Si todo funciona entonces tendremos nuestro CentOS 7 preparado para su uso.</p>
+<h3 id="artículos-relacionados">Artículos relacionados</h3>
+<p>Si estás instalando un CentOS y te esta dando problemas estos artículos quizá también te interesen:</p>
+<ul>
+<li><a href="../problemas-red-centos-7.md">Cómo solucionar problemas de red en CentOS 7</a></li>
+<li><a href="../instalar-apache-centos-7.md">Guía para instalar Apache en CentOS 7</a></li>
+<li><a href="../migracion-centos7-almalinux.md">Migración de CentOS 7 a AlmaLinux</a></li>
+<li><a href="../configuracion-seguridad-linux.md">Configuración básica de seguridad en Linux</a></li>
+</ul>
+</section></main>
+        <footer id="main-footer"><div class="footer">
+  <a href="#"></a>
+  <div class="footer-copyright">
+    <div class="dim">© 2025 </div>
+    <div></div>
+  </div>
+</div>
+</footer>
+      </div><aside id="side-pane" class="side-sticky"><div class="side-details">
+    <span>568 </span>
+    <span>4 - 5 </span><div class="side-details-taxonomy">
+        <small>categories: 
+          <span class="details-taxonomy"><a href="http://localhost:1313/categories/technology">Technology</a></span><span class="details-taxonomy"><a href="http://localhost:1313/categories/linux">Linux</a></span></small>
+      </div></div><h3></h3><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#solución">Solución</a></li>
+        <li><a href="#artículos-relacionados">Artículos relacionados</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav><h3></h3>
+    <ul><li><a href="/es/es/posts/actualizacion-de-paquetes-congelada-centos-7/">Actualización de paquetes de centos congelada</a></li><li><a href="/es/es/posts/installaci%C3%B3n-ubuntu/">Instalación de Ubuntu</a></li><li><a href="/es/en/posts/what-distro-should-i-choose/">Quick Introduction to Linux Systems. Which Distro Should I Choose?</a></li><li><a href="/es/es/posts/que-distribucion-elijo/">Introducción rápida a sistemas linux. ¿Qué distro elijo?</a></li></ul></aside></div>
+  </div>
+</body>
+</html>

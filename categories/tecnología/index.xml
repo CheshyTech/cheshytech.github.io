@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tecnología on </title>
+    <link>//localhost:1313/categories/tecnolog%C3%ADa/</link>
+    <description>Recent content in Tecnología on </description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 26 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/categories/tecnolog%C3%ADa/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introducción rápida a sistemas linux. ¿Qué distro elijo?</title>
+      <link>//localhost:1313/es/posts/que-distribucion-elijo/</link>
+      <pubDate>Sat, 26 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/es/posts/que-distribucion-elijo/</guid>
+      <description>&lt;h1 id=&#34;introducción&#34;&gt;Introducción&lt;/h1&gt;&#xA;&lt;p&gt;Holis, bienvenidos a mi primer artículo! En este primer post quiero empezar por el principio, explicando un poco la base para que lo que vaya publicando después tenga más sentido. Aquí hablaré sobre qué es linux, por qué se usa y como elegir una de tantas distribuciones existentes.&lt;/p&gt;&#xA;&lt;h2 id=&#34;por-qué-linux&#34;&gt;¿Por qué Linux?&lt;/h2&gt;&#xA;&lt;p&gt;Linux es un sistema operativo libre y flexible, utilizado por millones de personas alrededor del mundo. Al trabajar como administradora de sistemas trato con distintas distribuciones de Linux, lo que poco a poco me va ayudando a aprender cositas interesantes a base de darme cabezazos contra una pared. En este artículo, hablaré un poco sobre lo que es Linux y cómo puedes empezar a tratar con él.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

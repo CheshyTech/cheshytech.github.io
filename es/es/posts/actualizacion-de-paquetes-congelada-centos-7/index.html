@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Actualización de paquetes de centos congelada | CheshyTech Blog</title>
+<link rel="icon" href="favicon.svg" sizes="any" type="image/svg+xml" /><meta property="og:url" content="http://localhost:1313/es/es/posts/actualizacion-de-paquetes-congelada-centos-7/">
+  <meta property="og:site_name" content="CheshyTech Blog">
+  <meta property="og:title" content="Actualización de paquetes de centos congelada">
+  <meta property="og:description" content="Tras instalar un sistema de CentOS 7 y actualizar los repositorios generalmente toca actualizar paquetes. Pues por alguna razon una de estas veces uno de los paquetes ha decidido que le apetecía estar corrupto. Se trata concretamente del paquete initial-setup-0.3.9.30-1.el7.centos.x86_64.
+Al encontrase corrupto lo que pasa es que cuando llega el punto en que quiere “limpiar” versiones antiguas tras actualizar los paquetes se encuentra con que no debe de poder borrarlo, y se queda el proceso de actualización “congelado”, y llega un punto en que no sabes si está haciendo algo y tarda mucho o se ha muerto.">
+  <meta property="og:locale" content="es">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="es">
+    <meta property="article:published_time" content="2025-05-13T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-05-13T00:00:00+00:00">
+    <meta property="article:tag" content="Tutorial">
+    <meta property="article:tag" content="Programming">
+    <meta property="article:tag" content="Linux">
+    <meta property="article:tag" content="Centos">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Actualización de paquetes de centos congelada">
+  <meta name="twitter:description" content="Tras instalar un sistema de CentOS 7 y actualizar los repositorios generalmente toca actualizar paquetes. Pues por alguna razon una de estas veces uno de los paquetes ha decidido que le apetecía estar corrupto. Se trata concretamente del paquete initial-setup-0.3.9.30-1.el7.centos.x86_64.
+Al encontrase corrupto lo que pasa es que cuando llega el punto en que quiere “limpiar” versiones antiguas tras actualizar los paquetes se encuentra con que no debe de poder borrarlo, y se queda el proceso de actualización “congelado”, y llega un punto en que no sabes si está haciendo algo y tarda mucho o se ha muerto.">
+
+    <link rel="stylesheet" href="/css/root.css">
+    <link rel="stylesheet" href="/css/bundle.css">
+
+      <script src="/js/bundle.js"></script><script defer src="/js/search/flexsearch.compact.64594b125f7b78bdf4fa8316955922bbebb1cd6baef3f16654bfca20309f18f8.js" integrity="sha256-ZFlLEl97eL30&#43;oMWlVkiu&#43;uxzWuu8/FmVL/KIDCfGPg="></script>
+<script defer src="/js/search/search.4460565090e1d2158447241cfb857e63b5e18a69691444e622afb443690942a5.js" integrity="sha256-RGBWUJDh0hWERyQc&#43;4V&#43;Y7XhimlpFETmIq&#43;0Q2kJQqU="></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+</head>
+<body class="notransition">
+  <div id="container">
+    <header id="main-header"><div role="navigation" aria-label="Main">
+  <div class="nav-left">
+    <a href="http://localhost:1313/" style="color: inherit;">CheshyTech Blog</a>
+  </div>
+  <div class="nav-right">
+    <div style="position:absolute;width:0px;height:0px;">
+      <div id="nav-dropdown-menu" class="hidden" href="#">
+    <div class="nav-item">
+      <a
+      >Posts</a>
+    </div>
+</div>
+    </div>
+    <a id="nav-dropdown-button" href="#"><svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</a>
+    <div id="nav-menu">
+    <div class="nav-item">
+      <a
+      >Posts</a>
+    </div>
+</div>
+    <a id="theme-switcher" href="#">
+<svg class="light-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 3V4M12 20V21M4 12H3M6.31412 6.31412L5.5 5.5M17.6859 6.31412L18.5 5.5M6.31412 17.69L5.5 18.5001M17.6859 17.69L18.5 18.5001M21 12H20M16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8C14.2091 8 16 9.79086 16 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+<svg class="dark-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.32031 11.6835C3.32031 16.6541 7.34975 20.6835 12.3203 20.6835C16.1075 20.6835 19.3483 18.3443 20.6768 15.032C19.6402 15.4486 18.5059 15.6834 17.3203 15.6834C12.3497 15.6834 8.32031 11.654 8.32031 6.68342C8.32031 5.50338 8.55165 4.36259 8.96453 3.32996C5.65605 4.66028 3.32031 7.89912 3.32031 11.6835Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</a>
+  </div>
+</div>
+</header>
+    <div class="flex grow">
+      <div id="main-pane">
+        <main id="main-content"><div class="single-header">
+<ol class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a itemprop="item" href="http://localhost:1313/es/">
+        <span itemprop="name"></span>
+      </a>
+      <meta itemprop="position" content='1' />
+    </li>
+    <span>&nbsp»&nbsp</span>
+    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a itemprop="item" href="http://localhost:1313/es/es/">
+        <span itemprop="name">Bienvenido a mi Blog</span>
+      </a>
+      <meta itemprop="position" content='2' />
+    </li>
+    <span>&nbsp»&nbsp</span>
+</ol>
+<h1>Actualización de paquetes de centos congelada</h1><time class="dim" datetime="2025-05-13T00:00:00&#43;00:00">13 de mayo de 2025</time><div class="term-container"><div class="tag">
+        <a href="http://localhost:1313/es/tags/tutorial/">#tutorial</a>
+      </div><div class="tag">
+        <a href="http://localhost:1313/es/tags/programming/">#programming</a>
+      </div><div class="tag">
+        <a href="http://localhost:1313/es/tags/linux/">#linux</a>
+      </div><div class="tag">
+        <a href="http://localhost:1313/es/tags/centos/">#centos</a>
+      </div></ol></div>
+  <section class="page-section"><p>Tras instalar un sistema de CentOS 7 y actualizar los repositorios generalmente toca actualizar paquetes. Pues por alguna razon una de estas veces uno de los paquetes ha decidido que le apetecía estar corrupto. Se trata concretamente del paquete <code>initial-setup-0.3.9.30-1.el7.centos.x86_64</code>.</p>
+<p>Al encontrase corrupto lo que pasa es que cuando llega el punto en que quiere &ldquo;limpiar&rdquo; versiones antiguas tras actualizar los paquetes se encuentra con que no debe de poder borrarlo, y se queda el proceso de actualización &ldquo;congelado&rdquo;, y llega un punto en que no sabes si está haciendo algo y tarda mucho o se ha muerto.</p>
+<p>Para comprobar si realmente se ha muerto o sigue funcionando ejecuta lo siguiente:
+<code>bash top </code>
+tras ejecutar este comando deberías ver algun proceso asociado a <code>yum</code> si no lo hay entonces es que se te ha quedado muerto.
+Ahora ejecuta:
+<code>bash ps aux | grep yum </code>
+con esto comprobamos si hay algún hilo asociado a esa tarea. Si te aparecen al menos dos, entonces confirmamos que se quedo tonto.</p>
+<h3 id="solución">Solución</h3>
+<p>Para resolver este problema, sigue estos pasos:</p>
+<ol>
+<li>
+<p><strong>Eleva permisos de administrador</strong><br>
+Accede como root utilizando <code>su -</code>.</p>
+</li>
+<li>
+<p><strong>Consulta el id del proceso que nos interesa</strong><br>
+Con la ejecución del último comando (ps aux | grep yum) deberás de haber obtenido una salida con la siguiente forma:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>root     <span style="color:#ae81ff">176466</span> 13.4  0.8 <span style="color:#ae81ff">1248256</span> <span style="color:#ae81ff">133756</span> pts/2  S+   15:59   0:02 /usr/bin/python /bin/yum install gedit
+</span></span><span style="display:flex;"><span>root     <span style="color:#ae81ff">176645</span>  0.0  0.0 <span style="color:#ae81ff">112836</span>   <span style="color:#ae81ff">980</span> pts/1    S+   16:00   0:00 grep --color<span style="color:#f92672">=</span>auto yum
+</span></span></code></pre></div><p>Ese primer proceso es el que nos interesa, que como se puede ver tiene listado el comando como tal al final de la linea, en este caso <code>yum install gedit</code>.</p>
+</li>
+<li>
+<p><strong>Matamos el proceso</strong><br>
+Matamos el proceso ya que no está haciendo nada. Necesitaremos su identificador, que es el primer numerito que sale en la linea del proceso de la salida anterior, justo al lado del nombre de usuario, en este caso 176466.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>kill -9 <span style="color:#f92672">[</span>process-id<span style="color:#f92672">]</span>
+</span></span></code></pre></div></li>
+<li>
+<p><strong>Eliminamos el paquete que genera el problema</strong><br>
+Se asume que el paquete que da el problema es el que lista el último en el log del update, por lo que al ser <code>initial-setup</code> un paquete que solo es necesario durante la instalacion del ssoo, podremos borrarlo sin que nos de ningún problema. Probamos con:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>yum remove initial-setup
+</span></span></code></pre></div><p>Si no nos funciona, entonces borramos a la fuerza el paquete sin el uso de scripts del sistema:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>rpm -e --noscripts initial-setup-0.3.9.30-1.el7.centos.x86_64
+</span></span><span style="display:flex;"><span>rpm -e --noscripts initial-setup-0.3.9.45-1.el7.centos.x86_64
+</span></span></code></pre></div></li>
+<li>
+<p><strong>Actualiza la base de datos de rpm</strong><br>
+Ejecuta lo siguiente:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>yum clean all
+</span></span><span style="display:flex;"><span>rm -f /var/lib/rpm/__bd*
+</span></span><span style="display:flex;"><span>rpm --rebuilddb
+</span></span></code></pre></div></li>
+</ol>
+<p>En principio ya deberías poder actualizar tu sistema sin problema ejecutando <code>yum update -y</code>.</p>
+<h3 id="artículos-relacionados">Artículos relacionados</h3>
+<p>Si estás instalando un CentOS y te esta dando problemas estos artículos quizá también te interesen:</p>
+<ul>
+<li><a href="repositorios-desactualizados-centos-7.md">Repositorios desactualizados en CentOS 7</a></li>
+<li><a href="../instalar-apache-centos-7.md">Guía para instalar Apache en CentOS 7</a></li>
+<li><a href="../migracion-centos7-almalinux.md">Migración de CentOS 7 a AlmaLinux</a></li>
+<li><a href="../configuracion-seguridad-linux.md">Configuración básica de seguridad en Linux</a></li>
+</ul>
+</section></main>
+        <footer id="main-footer"><div class="footer">
+  <a href="#"></a>
+  <div class="footer-copyright">
+    <div class="dim">© 2025 </div>
+    <div></div>
+  </div>
+</div>
+</footer>
+      </div><aside id="side-pane" class="side-sticky"><div class="side-details">
+    <span>473 </span>
+    <span>3 - 3 </span><div class="side-details-taxonomy">
+        <small>categories: 
+          <span class="details-taxonomy"><a href="http://localhost:1313/categories/technology">Technology</a></span><span class="details-taxonomy"><a href="http://localhost:1313/categories/linux">Linux</a></span></small>
+      </div></div><h3></h3><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#solución">Solución</a></li>
+        <li><a href="#artículos-relacionados">Artículos relacionados</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav><h3></h3>
+    <ul><li><a href="/es/es/posts/repositorios-desactualizados-centos-7/">Repositorios de CentOS desactualizados</a></li><li><a href="/es/es/posts/installaci%C3%B3n-ubuntu/">Instalación de Ubuntu</a></li><li><a href="/es/en/posts/what-distro-should-i-choose/">Quick Introduction to Linux Systems. Which Distro Should I Choose?</a></li><li><a href="/es/es/posts/que-distribucion-elijo/">Introducción rápida a sistemas linux. ¿Qué distro elijo?</a></li></ul></aside></div>
+  </div>
+</body>
+</html>
