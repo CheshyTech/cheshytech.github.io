@@ -4,12 +4,12 @@
     <title>Linux on CheshyTech Blog</title>
     <link>https://cheshytech.github.io/es/categories/linux/</link>
     <description>Recent content in Linux on CheshyTech Blog</description>
-    <generator>Hugo -- 0.147.2</generator>
+    <generator>Hugo -- 0.147.9</generator>
     <language>es-es</language>
     <lastBuildDate>Tue, 13 May 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://cheshytech.github.io/es/categories/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Actualización de paquetes de centos congelada</title>
+      <title>Actualización de paquetes de CentOS 7 congelada</title>
       <link>https://cheshytech.github.io/es/posts/actualizacion-de-paquetes-congelada-centos-7/</link>
       <pubDate>Tue, 13 May 2025 00:00:00 +0000</pubDate>
       <guid>https://cheshytech.github.io/es/posts/actualizacion-de-paquetes-congelada-centos-7/</guid>
