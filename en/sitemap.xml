@@ -2,64 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://cheshytech.github.io/en/categories/</loc>
-    <lastmod>2025-05-13T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es-es"
-                href="https://cheshytech.github.io/es/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="https://cheshytech.github.io/en/categories/"
-                />
-  </url><url>
-    <loc>https://cheshytech.github.io/en/tags/centos/</loc>
-    <lastmod>2025-05-13T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es-es"
-                href="https://cheshytech.github.io/es/tags/centos/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="https://cheshytech.github.io/en/tags/centos/"
-                />
-  </url><url>
-    <loc>https://cheshytech.github.io/en/posts/centos-7-frozen-package-update/</loc>
-    <lastmod>2025-05-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://cheshytech.github.io/en/categories/linux/</loc>
-    <lastmod>2025-05-13T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es-es"
-                href="https://cheshytech.github.io/es/categories/linux/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="https://cheshytech.github.io/en/categories/linux/"
-                />
-  </url><url>
-    <loc>https://cheshytech.github.io/en/tags/linux/</loc>
-    <lastmod>2025-05-13T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es-es"
-                href="https://cheshytech.github.io/es/tags/linux/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="https://cheshytech.github.io/en/tags/linux/"
-                />
-  </url><url>
-    <loc>https://cheshytech.github.io/en/posts/outdated-repositories-centos-7/</loc>
-    <lastmod>2025-05-13T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://cheshytech.github.io/en/posts/</loc>
     <lastmod>2025-05-13T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -71,58 +13,6 @@
                 rel="alternate"
                 hreflang="en-us"
                 href="https://cheshytech.github.io/en/posts/"
-                />
-  </url><url>
-    <loc>https://cheshytech.github.io/en/tags/programming/</loc>
-    <lastmod>2025-05-13T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es-es"
-                href="https://cheshytech.github.io/es/tags/programming/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="https://cheshytech.github.io/en/tags/programming/"
-                />
-  </url><url>
-    <loc>https://cheshytech.github.io/en/tags/</loc>
-    <lastmod>2025-05-13T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es-es"
-                href="https://cheshytech.github.io/es/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="https://cheshytech.github.io/en/tags/"
-                />
-  </url><url>
-    <loc>https://cheshytech.github.io/en/categories/technology/</loc>
-    <lastmod>2025-05-13T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es-es"
-                href="https://cheshytech.github.io/es/categories/technology/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="https://cheshytech.github.io/en/categories/technology/"
-                />
-  </url><url>
-    <loc>https://cheshytech.github.io/en/tags/tutorial/</loc>
-    <lastmod>2025-05-13T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es-es"
-                href="https://cheshytech.github.io/es/tags/tutorial/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="https://cheshytech.github.io/en/tags/tutorial/"
                 />
   </url><url>
     <loc>https://cheshytech.github.io/en/contact/</loc>
@@ -149,22 +39,6 @@
                 rel="alternate"
                 hreflang="en-us"
                 href="https://cheshytech.github.io/en/privacy/"
-                />
-  </url><url>
-    <loc>https://cheshytech.github.io/en/posts/what-distro-should-i-choose/</loc>
-    <lastmod>2025-04-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://cheshytech.github.io/en/</loc>
-    <lastmod>2025-04-26T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="es-es"
-                href="https://cheshytech.github.io/es/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="https://cheshytech.github.io/en/"
                 />
   </url>
 </urlset>
